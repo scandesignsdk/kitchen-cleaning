@@ -1,0 +1,15 @@
+{% trans_default_domain "backup" %}
+{% block subject %}
+{{ "[Kitchen] You are the cleaner dude today"|trans }} [{{ date|kitchendate }}]
+{% endblock %}
+
+{%- block body_html -%}
+    <p>{{ "Hi %name%"|trans({"%name%": team.user.name}) }}</p>
+    <p><b>{{ "Congrats! - You are the cleaner dude today"|trans }}</b></p>
+{%- endblock -%}
+
+{% block body_text %}
+    {{ "Hi %name%"|trans({"%name%": team.user.name}) }}
+
+    {{ "Congrats! - You are the cleaner dude today"|trans }}
+{% endblock %}

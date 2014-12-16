@@ -1,0 +1,13 @@
+{% trans_default_domain "app" %}
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="team">
+        {{ "Today cleaner is:"|trans }}
+        {% if team.useBackup %}
+            <span class="primary">{{ team.backup.name }}</span>
+        {% else %}
+            <span class="primary">{{ team.user.name }}</span>
+            <span class="backup">{{ "(Backup is: %name%)"|trans({"%name%": team.backup.name}) }}</span>
+        {% endif %}
+    </div>
+{% endblock %}

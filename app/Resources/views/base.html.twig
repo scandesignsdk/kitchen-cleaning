@@ -1,0 +1,66 @@
+{% trans_default_domain "app" %}
+<!DOCTYPE html>
+{% set menu %}
+<div class="text-right">
+    <ul class="list-unstyled list-inline">
+        <li><a class="btn btn-default" href="{{ path('homepage') }}">Team</a></li>
+        <li><a class="btn btn-default" href="{{ path('topscore') }}">Topscore</a></li>
+    </ul>
+</div>
+{% endset %}
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Scandesign Media : Kitchen{% endblock %}</title>
+        {%- block stylesheets -%}
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+            {% stylesheets '@AppBundle/Resources/less/app.less' filter='less' output='compiled/app.css' %}
+                <link rel="stylesheet" href="{{ asset_url }}" />
+            {% endstylesheets %}
+            {%- block style -%}{%- endblock -%}
+        {%- endblock -%}
+
+        {%- include '::favicons.html.twig' -%}
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">{{ "Kitchen cleaning"|trans }}</h1>
+            {% if date is defined %}
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="date">{{ date|kitchendate }}</div>
+                </div>
+                <div class="col-sm-6">
+                    {{ menu }}
+                </div>
+            </div>
+            {% else %}
+                {{ menu }}
+            {% endif %}
+            <hr />
+            {%- block flashes -%}
+                {% if app.session.flashBag.peekAll|length > 0 %}
+                    {% for type,messages in app.session.flashBag.all %}
+                        {% if type == 'error' %}{% set type = 'danger' %}{% endif %}
+                        <div class="alert alert-{{ type }} alert-dismissible">
+                            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
+                            <ul class="list-unstyled">
+                            {% for msg in messages %}
+                                <li>{{ msg }}</li>
+                            {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {%- endblock flashes -%}
+            {%- block body -%}{%- endblock -%}
+        </div>
+
+        {%- block javascripts -%}
+            <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+            {%- block scripts -%}
+            {%- endblock -%}
+        {%- endblock -%}
+    </body>
+</html>

@@ -1,0 +1,30 @@
+@import "variables";
+@import "grid";
+
+body, html {
+  background: @brand-primary;
+  color: @btn-primary-color;
+}
+
+.container {
+  margin-top:20px;
+}
+
+h1 {letter-spacing: .25em;margin-bottom: 20px}
+
+.date {font-size: @font-size-h4}
+.team {
+  text-align: center;
+  &.notdecided {
+    font-weight: bold;
+    font-size: @font-size-h3;
+  }
+  .primary {
+    display: block;
+    font-weight: bold;
+    font-size: @font-size-h2;
+  }
+  .backup {
+    font-size: @font-size-h4;
+  }
+}

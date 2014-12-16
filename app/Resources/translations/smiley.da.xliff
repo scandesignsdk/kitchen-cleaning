@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2014-12-16T04:21:10Z" source-language="en" target-language="da" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="74684b19e63c1baa6ff932dc17194f00d9154e14" resname="%error%">
+        <source>%error%</source>
+        <target state="new">%error%</target>
+        <jms:reference-file line="28">AppBundle/Controller/SmileyController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="bf1cc2e5a594a3a69e5c194f93e1fd196875cca2" resname="Almost perfect">
+        <source>Almost perfect</source>
+        <target>Næsten perfekt</target>
+        <jms:reference-file line="11">views/emails/smiley.email.twig</jms:reference-file>
+        <jms:reference-file line="24">views/emails/smiley.email.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="50b23989bbfb27492921c716c42d76dccdb2fae5" resname="Ewwww">
+        <source>Ewwww</source>
+        <target>Ej... det kan gøres bedre</target>
+        <jms:reference-file line="13">views/emails/smiley.email.twig</jms:reference-file>
+        <jms:reference-file line="30">views/emails/smiley.email.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="66a9b079d744f47943aa3b78d2c30f62789724ac" resname="Hi %name%">
+        <source>Hi %name%</source>
+        <target>Hej %name%</target>
+        <jms:reference-file line="7">views/emails/smiley.email.twig</jms:reference-file>
+        <jms:reference-file line="17">views/emails/smiley.email.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="39c3be22e49caeb9c78f8470b546d9debb7f1c13" resname="How was the cleaning today?">
+        <source>How was the cleaning today?</source>
+        <target>Hvordan synes du rengøringen var idag?</target>
+        <jms:reference-file line="8">views/emails/smiley.email.twig</jms:reference-file>
+        <jms:reference-file line="19">views/emails/smiley.email.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="241f20a8a1ff467442d0852ca0ef3e4965455530" resname="Perfect">
+        <source>Perfect</source>
+        <target>PERFEKT!</target>
+        <jms:reference-file line="10">views/emails/smiley.email.twig</jms:reference-file>
+        <jms:reference-file line="21">views/emails/smiley.email.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e8ae6c46833bf9e24c90d2d1d6f1a3137585c9d8" resname="That could be better">
+        <source>That could be better</source>
+        <target>Tæt på, kan gøres bedre</target>
+        <jms:reference-file line="12">views/emails/smiley.email.twig</jms:reference-file>
+        <jms:reference-file line="27">views/emails/smiley.email.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8a23b14df3096933a3180438a8c50703989e8454" resname="Whoops - Email csrf token not valid">
+        <source>Whoops - Email csrf token not valid</source>
+        <target>Whoops - Email csrf token not valid</target>
+        <jms:reference-file line="31">AppBundle/Controller/SmileyController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="fb612e0e075836f5df22f2b66176e5425b03730f" resname="Your score has been saved">
+        <source>Your score has been saved</source>
+        <target>Point er gemt</target>
+        <jms:reference-file line="26">AppBundle/Controller/SmileyController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="1cd347d73319ae3993beae2f7c77d22b64828f22" resname="[Kitchen] How was the cleaning today?">
+        <source>[Kitchen] How was the cleaning today?</source>
+        <target>[Køkken] Hvordan var rengøringen idag?</target>
+        <jms:reference-file line="3">views/emails/smiley.email.twig</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

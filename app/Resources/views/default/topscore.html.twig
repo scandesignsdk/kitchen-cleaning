@@ -1,0 +1,32 @@
+{% trans_default_domain "topscore" %}
+{% extends 'base.html.twig' %}
+{% block body %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>{{ "#"|trans }}</th>
+                <th>{{ "Name"|trans }}</th>
+                <th>{{ "Points"|trans }}</th>
+                <th>{{ "# of cleans"|trans }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% set realnum = 0 %}
+            {% set num = 1 %}
+            {% for topscore in topscores %}
+                {% set realnum = realnum + 1 %}
+                {% if loop.first %}{% set last = topscore.total %}{% endif %}
+                {% if last != topscore.total %}
+                    {% set num = realnum %}
+                    {% set last = topscore.total %}
+                {% endif %}
+                <tr>
+                    <td>{{ num }}</td>
+                    <td>{{ topscore.user.name }}</td>
+                    <td>{{ topscore.total }}</td>
+                    <td>{{ topscore.cleans }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2014-12-16T04:19:46Z" source-language="en" target-language="da" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="74684b19e63c1baa6ff932dc17194f00d9154e14" resname="%error%">
+        <source>%error%</source>
+        <target state="new">%error%</target>
+        <jms:reference-file line="26">AppBundle/Controller/BackupController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="086c409c502767574acc3011a7a06bd24bd61c40" resname="Congrats! - You are the cleaner dude today">
+        <source>Congrats! - You are the cleaner dude today</source>
+        <target>Tilykke...! - Idag er du rengørings person</target>
+        <jms:reference-file line="8">views/emails/primary.email.twig</jms:reference-file>
+        <jms:reference-file line="14">views/emails/primary.email.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="66a9b079d744f47943aa3b78d2c30f62789724ac" resname="Hi %name%">
+        <source>Hi %name%</source>
+        <target>Hej %name%</target>
+        <jms:reference-file line="7">views/emails/backup.email.twig</jms:reference-file>
+        <jms:reference-file line="13">views/emails/backup.email.twig</jms:reference-file>
+        <jms:reference-file line="7">views/emails/primary.email.twig</jms:reference-file>
+        <jms:reference-file line="12">views/emails/primary.email.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="30cbbb83b579ccf995c64fdb007fca0b135945f6" resname="If %name% is sick or not here today, please click below">
+        <source>If %name% is sick or not here today, please click below</source>
+        <target>Hvis %name% er syg eller ikke tilstedet idag, så klik venligst nedenunder</target>
+        <jms:reference-file line="17">views/emails/backup.email.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2c968fbd9ce7e94401d7d32fbbea3e97d1b9e83b" resname="If %name% is sick or not here today, please click here">
+        <source>If %name% is sick or not here today, please click here</source>
+        <target>Hvis %name% er syg eller ikke tilstedet idag, klik her</target>
+        <jms:reference-file line="9">views/emails/backup.email.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8a23b14df3096933a3180438a8c50703989e8454" resname="Whoops - Email csrf token not valid">
+        <source>Whoops - Email csrf token not valid</source>
+        <target>Whoops - Email csrf token not valid</target>
+        <jms:reference-file line="29">AppBundle/Controller/BackupController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b84ee28829b3c9342aa29737e568e498f9773630" resname="You have been added as cleaner today">
+        <source>You have been added as cleaner today</source>
+        <target>Du er blevet gjort til rengørings person</target>
+        <jms:reference-file line="24">AppBundle/Controller/BackupController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="15015f234c5ddf14ce66246e43dbcd100bdbc354" resname="You have been chosen to be backup on the kitchen cleaning today?">
+        <source>You have been chosen to be backup on the kitchen cleaning today?</source>
+        <target>Du er blevet valgt til rengørings vagten idag</target>
+        <jms:reference-file line="8">views/emails/backup.email.twig</jms:reference-file>
+        <jms:reference-file line="15">views/emails/backup.email.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8d497564dbd050c377c37c2a84b8e4bf62706adc" resname="[Kitchen] You are the cleaner dude today">
+        <source>[Kitchen] You are the cleaner dude today</source>
+        <target>[Køkken] Du er rengøringsperson idag</target>
+        <jms:reference-file line="3">views/emails/primary.email.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8a25fbc1e07c4654ed61401d0da152a392ddcfad" resname="[Kitchen] You have been chosen as backup">
+        <source>[Kitchen] You have been chosen as backup</source>
+        <target>[Køkken] Du er blevet valgt som backup idag</target>
+        <jms:reference-file line="3">views/emails/backup.email.twig</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

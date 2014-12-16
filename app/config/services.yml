@@ -1,0 +1,39 @@
+parameters:
+  defaultFromEmail: "no-replay@scandesignmedia.dk"
+
+services:
+  twig.text_extension:
+    class: Twig_Extensions_Extension_Text
+    tags:
+      - name: twig.extension
+
+  appbundle.service.date:
+    class: AppBundle\Service\DateService
+
+  appbundle.twig.kitchendate:
+    class: AppBundle\Twig\DateTwig
+    arguments: [@appbundle.service.date]
+    tags:
+      - { name: twig.extension }
+
+  appbundle.twig.linktwig:
+    class: AppBundle\Twig\LinkTwig
+    arguments: [ @appbundle.service.token, @router ]
+    tags:
+      - { name: twig.extension }
+
+  appbundle.service.token:
+    class: AppBundle\Service\TokenService
+    arguments: [ @form.csrf_provider, %secret% ]
+
+  appbundle.service.mailer:
+    class: AppBundle\Service\MailsenderService
+    arguments: [ @mailer, %defaultfromemail% ]
+
+  appbundle.service.smiley:
+    class: AppBundle\Service\SmileyService
+    arguments: [ @doctrine.orm.entity_manager, @twig, @appbundle.service.mailer, @appbundle.service.token ]
+
+  appbundle.service.team:
+    class: AppBundle\Service\TeamService
+    arguments: [ @doctrine.orm.entity_manager, @twig, @appbundle.service.mailer, @appbundle.service.token ]

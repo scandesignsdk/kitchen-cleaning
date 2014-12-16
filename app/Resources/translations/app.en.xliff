@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2014-12-16T04:12:37Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="3b460d52c520905fb9b3b3ac79832de556ce5000" resname="(Backup is: %name%)">
+        <source>(Backup is: %name%)</source>
+        <target state="new">(Backup is: %name%)</target>
+        <jms:reference-file line="10">views/default/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="99e131be930827ff6dda9d1c2acddea74d3bac7b" resname="Kitchen cleaning">
+        <source>Kitchen cleaning</source>
+        <target state="new">Kitchen cleaning</target>
+        <jms:reference-file line="27">Resources/views/base.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0d1321d142ed56f9ead1369da4bbee8f63e01bb0" resname="Team has not yet been decided for today">
+        <source>Team has not yet been decided for today</source>
+        <target state="new">Team has not yet been decided for today</target>
+        <jms:reference-file line="5">views/default/notselected.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2bf8a9e36b8b2c3985fbf6cc07ec1a1fc870a1b0" resname="Today cleaner is:">
+        <source>Today cleaner is:</source>
+        <target state="new">Today cleaner is:</target>
+        <jms:reference-file line="5">views/default/index.html.twig</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

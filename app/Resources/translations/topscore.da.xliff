@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2014-12-16T04:21:29Z" source-language="en" target-language="da" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="d08f88df745fa7950b104e4a707a31cfce7b5841" resname="#">
+        <source>#</source>
+        <target state="new">#</target>
+        <jms:reference-file line="7">views/default/topscore.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c5024e8f1fdf3101366bde7653c4c1bcaa39c020" resname="# of cleans">
+        <source># of cleans</source>
+        <target>Antal rengøringer</target>
+        <jms:reference-file line="10">views/default/topscore.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="709a23220f2c3d64d1e1d6d18c4d5280f8d82fca" resname="Name">
+        <source>Name</source>
+        <target>Navn</target>
+        <jms:reference-file line="8">views/default/topscore.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4b2a6a3149566c8245fa37ec86bac6c047004de2" resname="Points">
+        <source>Points</source>
+        <target>Point</target>
+        <jms:reference-file line="9">views/default/topscore.html.twig</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

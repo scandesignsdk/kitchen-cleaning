@@ -1,0 +1,19 @@
+{% trans_default_domain "backup" %}
+{% block subject %}
+{{ "[Kitchen] You have been chosen as backup"|trans }} [{{ date|kitchendate }}]
+{% endblock %}
+
+{%- block body_html -%}
+    <p>{{ "Hi %name%"|trans({"%name%": team.backup.name}) }}</p>
+    <p><b>{{ "You have been chosen to be backup on the kitchen cleaning today?"|trans }}</b></p>
+    <p><a href="{{ backuplink(team) }}">{{ "If %name% is sick or not here today, please click here"|trans({"%name%": team.user.name}) }}</a></p>
+{%- endblock -%}
+
+{% block body_text %}
+    {{ "Hi %name%"|trans({"%name%": team.backup.name}) }}
+
+    {{ "You have been chosen to be backup on the kitchen cleaning today?"|trans }}
+
+    <a href="{{ backuplink(team) }}">{{ "If %name% is sick or not here today, please click below"|trans({"%name%": team.user.name}) }}</a>
+    {{ backuplink(team) }}
+{% endblock %}

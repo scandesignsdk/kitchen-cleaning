@@ -1,0 +1,32 @@
+{% trans_default_domain "smiley" %}
+{% block subject %}
+{{ "[Kitchen] How was the cleaning today?"|trans }} [{{ date|kitchendate }}]
+{% endblock %}
+
+{%- block body_html -%}
+    <p>{{ "Hi %name%"|trans({"%name%": user.name}) }}</p>
+    <p><b>{{ "How was the cleaning today?"|trans }}</b></p>
+
+    <p><a href="{{ smileylink(team, user, 4) }}">{{ "Perfect"|trans }}</a></p>
+    <p><a href="{{ smileylink(team, user, 3) }}">{{ "Almost perfect"|trans }}</a></p>
+    <p><a href="{{ smileylink(team, user, 2) }}">{{ "That could be better"|trans }}</a></p>
+    <p><a href="{{ smileylink(team, user, 1) }}">{{ "Ewwww"|trans }}</a></p>
+{%- endblock -%}
+
+{% block body_text %}
+    {{ "Hi %name%"|trans({"%name%": user.name}) }}
+
+    {{ "How was the cleaning today?"|trans }}
+
+    {{ "Perfect"|trans }}
+    {{ smileylink(team, user, 4) }}
+
+    {{ "Almost perfect"|trans }}
+    {{ smileylink(team, user, 3) }}
+
+    {{ "That could be better"|trans }}
+    {{ smileylink(team, user, 2) }}
+
+    {{ "Ewwww"|trans }}
+    {{ smileylink(team, user, 1) }}
+{% endblock %}
